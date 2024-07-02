@@ -88,11 +88,20 @@ res |>
 summary(res)
 
 
+# Visualization (What? Why? How?)
+# MA Plot (M vs A Plot)
+# What: An MA plot represents the log-fold change (M) on the y-axis and the average expression (A) on the x-axis for each gene or feature.
+# Why: It is used to visualize differential expression between two conditions.The log-fold change (M) gives an idea of the magnitude of change, and the average expression (A) helps identify if the change is dependent on the expression level.
+plotMA(dds)
 
 
 
-
-
+# Interpretations
+# 1. Points on the plot represent genes.
+# 2. Genes with significant differential expression are often `found at the extremes` of the plot.
+# 3. Upregulated genes are at the top
+# 4. Downregulated genes at the bottom
+# 5. Non-differentially expressed genes are centered around zero on the y-axis.
 
 
 
